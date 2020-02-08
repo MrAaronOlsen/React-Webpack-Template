@@ -1,0 +1,46 @@
+{
+  "name": "aaronsiteclient",
+  "version": "1.0.0",
+  "description": "Client code for Aaron Site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --config webpack.dev.js",
+    "start": "node server.js",
+    "build": "webpack -p --config webpack.prod.js",
+    "heroku-postbuild": "webpack -p --config webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Olsen",
+  "license": "ISC",
+  "engines": {
+    "node": "13.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "case-sensitive-paths-webpack-plugin": "^2.2.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^4.3.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.7.4",
+    "color": "^3.1.2",
+    "dotenv-webpack": "^1.7.0",
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-proptypes": "^1.0.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.4.1"
+  }
+}
